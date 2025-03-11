@@ -6,28 +6,41 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'barlow bold';
+  font-family: 'Barlowb';
   src: url('fonts/Barlow-Extra Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 body {
   font-family: 'Barlow', 'Times New Roman', Times, serif;
-  background-image: url('img/bg.jpg');
   background-repeat: no-repeat;
 }
 p {
   font-size: 1.4rem;
 }
-.logo {
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.images {
   position: relative;
-  top: 30px;
-  right: -20px;
+  min-width: 600px;
+}
+.logo {
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
 }
 .description {
-  margin-left: 800px;
+  margin-left: 70px;
+  height: fit-content;
+  width: fit-content;
+  min-width: 800px;
 }
 button {
+  font-family: 'Barlow', 'Times New Roman', Times, serif;
   font-size: 20px;
   width: 370px;
   height: 60px;
@@ -57,8 +70,8 @@ button {
   align-items: center;
   text-align: center;
   width: 25%;
-  margin: 40px 260px;
-  margin-left: 180px;
+  margin: 40px 250px;
+  margin-left: 300px;
 }
 .horizont::before,
 .horizont::after {
@@ -76,6 +89,9 @@ button {
   height: 70px;
   width: 370px;
 }
+.form.container {
+  min-width: 750px;
+}
 .form.mail {
   box-shadow: none;
   outline: none;
@@ -92,6 +108,12 @@ button {
   left: 40px;
   border: 2px solid #ccc;
   box-shadow: none;
+  outline: 0;
+}
+.form.phone:focus {
+  border-left-color: #3698fb;
+  border-width: 4px;
+  box-shadow: none;
 }
 .email {
   position: relative;
@@ -100,54 +122,40 @@ button {
 }
 .phone {
   position: relative;
-  top: -75px;
+  top: -70px;
   left: 430px;
 }
 p.Select {
   font-size: 1.3rem;
 }
+input[type='radio'] + label {
+  margin-left: 80px;
+}
 .radio {
   display: flex;
-  gap: 140px;
+  justify-content: space-between;
+}
+input[type='radio'],
+label {
+  margin: 0;
 }
 .textinvestor {
-  position: relative;
-  top: 50px;
-  right: 840px;
+  width: fit-content;
+  margin-top: 10px;
   border: 2px solid #fff;
-  padding: 6px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-.one {
-  position: relative;
-  top: 0px;
-  right: 1170px;
-}
-.two {
-  position: relative;
-  top: 0px;
-  right: 960px;
-}
-.three {
-  position: relative;
-  top: -1px;
-  right: 785px;
-}
-.fourth {
-  position: relative;
-  top: 0px;
-  right: 600px;
-}
+
 .license {
-  position: absolute;
-  bottom: 400px;
-  left: 800px;
+  margin-top: 20px;
 }
 .create {
-  position: absolute;
-  bottom: 300px;
-  left: 800px;
+  margin-top: 60px;
   background-color: #3698fb;
   border: 0;
   color: white;
+}
+label[type='radio'] {
+  font-family: 'Barlowb', 'Times New Roman', Times, serif;
+  margin-left: 0px;
 }
