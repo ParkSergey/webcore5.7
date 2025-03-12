@@ -1,12 +1,11 @@
 @font-face {
   font-family: 'Barlow';
-  src: url('fonts/Barlow-Thin.otf') format('opentype'),
-    url('fonts/Barlow-Extra\ Bold.ttf') format('truetype');
+  src: url('fonts/Barlow-Thin.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Barlowb';
+  font-family: 'Barlow';
   src: url('fonts/Barlow-Extra Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
